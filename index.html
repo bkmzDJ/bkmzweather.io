@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BKMZ Weather</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="icon" href="./assets/img/depico.ico">
+</head>
+<body id="body_js">
+  <div class="m_costl">
+  <header>
+    <div class="search_city_block">
+      <input type="text" class="search_city" id="inp_city" placeholder="Введите название города">
+      <button class="button_search" id="search_btn"><img class="bs" src="./assets/img/buttonsearch.png" alt=""></button>
+    </div>
+  </header>
+  <div class="loading" id="loading">
+    <samp id="loading_text">Загрузка</samp>
+  </div>
+  <main id="main_m">
+    <div class="left_container">
+      <h6 id="Date"></h6>
+      <div class="container">
+        <div class="icon_w"><img src="" id="img_ico" class="img_ico" alt=""></div>
+        <div class="info_c">
+          <p class="name_cit" id="name_cit"></p>
+          <p class="mainw" id="mainw"></p>
+        </div>
+      </div>
+      <p class="info_weather"><img src="./assets/img/temp.png" alt="" class="miniicon"> Температура: <samp id="temp"></samp>°C</p>
+      <p class="info_weather"><img src="./assets/img/temp_like.png" alt="" class="miniicon"> Ощущается как: <samp id="temp_like"></samp>°C</p>
+      <p class="info_weather"><img src="./assets/img/wind.png" alt="" class="miniicon"> Скорость ветра: <samp id="wind"></samp>м/с</p>
+      <p class="info_weather"><img src="./assets/img/arrow.png" alt="" class="miniicon"> Направление ветра: <samp id="wind_deg"></samp></p>
+      <p class="info_weather"><img src="./assets/img/humi.png" alt="" class="miniicon"> Влажность: <samp id="himi"></samp>%</p>
+    </div>
+    <div class="right_container">
+      <h6>Прогноз на 5 дней</h6>
+      <div class="disFlex">
+        <div class="card">
+          <p class="num_days_forecast" id="1_day">29.12</p>
+          <img src="" id="img_1_forecast" class="img_5forecast" alt="">
+          <div class="info_5forecast">
+            <p><samp  id="1_day_temp">33</samp><br>°C</p>
+            <p style="color: rgba(0, 0, 0, 0.658);"><samp  id="1_day_fl">33</samp><br>°C</p>
+            <p><samp id="1_day_wind">33</samp><br>м/с</p>
+          </div>
+        </div>
+        <div class="card">
+          <p class="num_days_forecast" id="2_day"></p>
+          <img src="" id="img_2_forecast" class="img_5forecast" alt="">
+          <div class="info_5forecast">
+            <p><samp  id="2_day_temp">33</samp><br>°C</p>
+            <p style="color: rgba(0, 0, 0, 0.658);"><samp  id="2_day_fl">33</samp><br>°C</p>
+            <p><samp id="2_day_wind">33</samp><br>м/с</p>
+          </div>
+        </div>
+        <div class="card">
+          <p class="num_days_forecast" id="3_day"></p>
+          <img src="" id="img_3_forecast" class="img_5forecast" alt="">
+          <div class="info_5forecast">
+            <p><samp  id="3_day_temp">33</samp><br>°C</p>
+            <p style="color: rgba(0, 0, 0, 0.658);"><samp  id="3_day_fl">33</samp><br>°C</p>
+            <p><samp id="3_day_wind">33</samp><br>м/с</p>
+          </div>
+        </div>
+        <div class="card">
+          <p class="num_days_forecast" id="4_day"></p>
+          <img src="" id="img_4_forecast" class="img_5forecast" alt="">
+          <div class="info_5forecast">
+            <p><samp  id="4_day_temp">33</samp><br>°C</p>
+            <p style="color: rgba(0, 0, 0, 0.658);"><samp  id="4_day_fl">33</samp><br>°C</p>
+            <p><samp id="4_day_wind">33</samp><br>м/с</p>
+          </div>
+        </div>
+        <div class="card">
+          <p class="num_days_forecast" id="5_day"></p>
+          <img src="" id="img_5_forecast" class="img_5forecast" alt="">
+          <div class="info_5forecast">
+            <p><samp  id="5_day_temp">33</samp><br>°C</p>
+            <p style="color: rgba(0, 0, 0, 0.658);"><samp  id="5_day_fl">33</samp><br>°C</p>
+            <p><samp id="5_day_wind">33</samp><br>м/с</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
