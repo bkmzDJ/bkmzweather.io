@@ -1,0 +1,223 @@
+@font-face {
+    font-family: 'GardensC';
+    src: url(../fonts/GardensC.otf) format("truetype");
+}
+*{
+    box-sizing: border-box;
+    font-family: 'GardensC';
+    margin: 0%;
+    user-select: none;
+}
+body {
+    background-size: 100% 100vh;
+    background-position: absolute;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+header {
+    background-color:rgba(17, 21, 28, 1);
+    display: flex;
+    justify-content: center;
+    height: 8vh;
+}
+.loading {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 6vh;
+    margin-top: 15vh;
+    width: 80%;
+    height: 60vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4vh;
+    border: 0.3vh solid rgba(17, 21, 28, 1);
+    background: linear-gradient(0.00deg, rgba(213, 231, 255, 0.9),rgba(254, 252, 253, 1) 100%);
+}
+.search_city_block {
+    background-color: #fff;
+    border: none;
+    border-radius: 50vh;
+    padding: 0vh 4vh;
+    width: 60vh;
+    margin: 0.7vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.button_search {
+    background-color: #ffffff00;
+    border: none;
+    height:5vh;
+    width: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.bs {
+    width: 4vh;
+    height: 4vh;
+}
+.search_city {
+    background-color: #ffffff00;
+    border: none;
+    font-size: 2.5vh;
+    width: 100%;
+    color: rgba(38, 38, 38, 1);
+    outline: none;
+}
+.left_container {
+    width: 60%;
+    min-width: 45vh;
+    height: 80vh;
+    border-radius: 4vh;
+    padding: 2vh 2vh;
+    border: 0.3vh solid rgba(17, 21, 28, 1);
+    background: linear-gradient(0.00deg, rgba(213, 231, 255, 0.7),rgba(254, 252, 253, 1) 100%);
+}
+.right_container {
+    width: 80%;
+    min-width: 56vh;
+    height: 0%;
+    border-radius: 4vh;
+    padding: 2vh 2vh;
+    border: 0.3vh solid rgba(17, 21, 28, 1);
+    background: linear-gradient(0.00deg, rgba(213, 231, 255, 0.7),rgba(254, 252, 253, 1) 100%);
+}
+main {
+    padding: 5vh 10vh;
+    display: flex;
+    gap: 2vh;
+}
+.m_costl{
+    height: 100vh;
+    backdrop-filter: blur(0.5vh);
+}
+.miniicon {
+    width: 2vh;
+}
+h6 {
+    text-align: center;
+    font-size: 4vh;
+    margin-bottom: 4vh;
+}
+.icon_w {
+    border: 0.2vh solid rgba(17, 21, 28, 1);
+    box-shadow: 10px 10px 20px rgba(17, 0, 255, 0.288);
+    background: rgb(216, 216, 216);
+    width: 20vh;
+    min-width: 20vh;
+    height: 20vh;
+    border-radius: 2vh;
+    margin-right: 2vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.img_ico {
+    width: 15vh;
+}
+.container {
+    display: flex;
+    margin-bottom: 3vh;
+}
+.name_cit {
+    font-size: 4vh;
+    border-bottom: 0.3vh solid black;
+}
+.mainw {
+    font-size: 3vh;
+    text-transform: capitalize;
+}
+.info_weather {
+    font-size: 3vh;
+    line-height: 4vh;
+}
+.card {
+    font-size: 2vh;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.7vh;
+    border-radius: 2vh;
+    box-shadow: 10px 10px 20px rgba(17, 0, 255, 0.288);
+    width: 16vh;
+    height: 20vh;
+    background: linear-gradient(180.00deg, rgba(213, 231, 255, 1),rgba(105, 103, 174, 1) 100%);
+}
+.disFlex {
+    gap: 1.5vh;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vh;
+}
+.num_days_forecast {
+    text-align: center;
+}
+.img_5forecast {
+    width: 11vh;
+}
+.info_5forecast {
+    text-align: center;
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* МОБИЛЬНЫЙ ДИЗАЙН */
+
+@media(max-width: 900px){
+    main {
+        padding: 5vh 0.5vh;
+        flex-direction: column;
+    }
+    .left_container {
+        width: 100%;
+        height: 0%;
+        min-width: 30vh;
+    }
+    .right_container {
+        width: 100%;
+        min-width: 30vh;
+    }
+    .card {
+        font-size: 1.2vh;
+        width: 11vh;
+        height: 16vh;
+    }
+    .img_5forecast {
+        width: 7vh;
+    }
+    .icon_w {
+        width: 15vh;
+        min-width: 15vh;
+        height: 15vh;
+    }
+    .img_ico{
+        width: 10vh;
+    }
+    .info_weather {
+        font-size: 2vh;
+        line-height: 3vh;
+    }
+    .mainw {
+        font-size: 2vh;
+        text-transform: capitalize;
+    }
+    h6 {
+        text-align: center;
+        font-size: 3vh;
+        margin-bottom: 3vh;
+    }
+    .name_cit {
+        font-size: 3vh;
+        border-bottom: 0.2vh solid black;
+    }
+    .m_costl{
+        backdrop-filter: blur(0px);
+    }
+}
